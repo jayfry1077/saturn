@@ -79,28 +79,28 @@ json = {
         {
             "name": "schedule",
             "description": "schedules messages to be sent at a future time!",
-            "type": 2,
+            "type": 1,
             "options": [
                 {
-                    "name": "Alias",
+                    "name": "alias",
                     "description": "Alias for the channel you want the message to appear in.",
                     "type": 3,
                     "required": True
                 },
                 {
-                    "name": "Message",
+                    "name": "message",
                     "description": "Message you want to send.",
                     "type": 3,
                     "required": True
                 },
                 {
-                    "name": "Time",
+                    "name": "time",
                     "description": "Time you want message to appear. Formatted YYYY-MM-DD HH:MM:SS AM/PM",
                     "type": 3,
                     "required": True
                 },
                 {
-                    "name": "Timezone",
+                    "name": "timezone",
                     "description": "Message you want to send.",
                     "type": 3,
                     "required": True,
