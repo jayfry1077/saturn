@@ -23,6 +23,12 @@ functions:
           path: /v1/signup
     layers:
       - arn:aws:lambda:us-east-1:#{AWS::AccountId}:layer:salt:1
+    iamRoleStatements:
+      - Effect: "Allow"
+        Action:
+          - ssm:GetParameter
+        Resource:
+          - arn:aws:ssm:us-east-1:*:parameter/${sls:stage}/discord/saturn/public/key
 
 resources:
   Resources:

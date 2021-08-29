@@ -7,7 +7,7 @@ import os
 logger = Logger(service='discord-utils')
 STAGE = os.environ.get('STAGE', 'dev')
 DISCORD_PUBLIC_KEY = parameters.get_parameter(
-    f'/{STAGE}/discord/public/key', decrypt=True)
+    f'/{STAGE}/discord/saturn/public/key', decrypt=True)
 
 
 def valid_signature(event):
